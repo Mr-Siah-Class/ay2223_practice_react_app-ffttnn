@@ -13,7 +13,7 @@ import HomeScreen from './screens/HomeScreen';
 import ProductsScreen from './screens/ProductsScreen';
 import NoScreen from './screens/NoScreen';
 import FooterBar from './components/FooterBar';
-// import SingleProductScreen from './screens/SingleProductScreen';
+import SingleProductScreen from './screens/SingleProductScreen';
 
 
 
@@ -33,7 +33,7 @@ class App extends React.Component
                   <Routes>
                     <Route exact path="/" element={<HomeScreen/>}/>
                     <Route path="/products" element={<ProductsScreen/>}/>
-                    {/* <Route path="/products/:productId" element={<SingleProductScreen/>}/>}/> */}
+                    <Route path="/products/:productId" element={<SingleProductScreen/>}/>
                     <Route path="*" element={<NoScreen/>}/>
                   </Routes>
                 </BrowserRouter>
